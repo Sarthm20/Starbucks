@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Starbucks Websites Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<section>
+		
+		<header>
+			<a href="#"><img src="index/logo.png" class="logo"></a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">What's new</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<div class="textbox">
+				<h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+				<p>We are passionate purveyors of coffee and everything else that goes with a rewarding coffeehouse experience. We also offer a selection of premium Tazo® teas, fine pastries and other delectable treats to please the taste buds. And the music you hear in store is chosen for its artistry and appeal.</p>
+				<a href="#">Learn More</a>
+			</div>
+			<div class="imgbox">
+				<img src="index/img1.png" class="Starbucks">
+			</div>
+		</div>
+		<ul class="thumb">
+			<li><img src="index/thumb1.png" onclick="imgSlider('index/img1.png')"></li>
+			<li><img src="index/thumb2.png" onclick="imgSlider('index/img2.png')"></li>
+			<li><img src="index/thumb3.png" onclick="imgSlider('index/img3.png')"></li>
+			
+		</ul>
+		<ul class="sci">
+			<li><a href="#"><img src="index/facebook.png"></a></li>
+			<li><a href="#"><img src="index/instagram.png"></a></li>
+			<li><a href="#"><img src="index/twitter.png"></a></li>
+		</ul>
+	</section>
+   <script type="text/javascript">
+   	function  imgSlider(anything){
+   		document.querySelector('.Starbucks').src = anything;
+   	}
+   	function toggleMenu(){
+   		var menuToggle=document.querySelector('.toggle');
+   		menuToggle.classList.toggle('active')
+   	}
+   </script>
+</body>
+</html>
